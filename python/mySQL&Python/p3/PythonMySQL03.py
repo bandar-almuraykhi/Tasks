@@ -80,86 +80,86 @@ except mysql.connector.Error as err:
 print()
 
 # # Task 5: Insert customers data
-# try:
-#     query = """
-#     INSERT INTO customers (name, email)
-#     VALUES (%s, %s)
-#     """
+try:
+    query = """
+    INSERT INTO customers (name, email)
+    VALUES (%s, %s)
+    """
 
-#     values = [
-#         ("Ahmed", "ahmed@gmail.com"),
-#         ("Mohammed", "mohammed@gmail.com"),
-#         ("Ali", "ali@gmail.com"),
-#         ("Khalid", "khalid@gmail.com"),
-#         ("Omar", "omar@gmail.com")
-#     ]
+    values = [
+        ("Ahmed", "ahmed@gmail.com"),
+        ("Mohammed", "mohammed@gmail.com"),
+        ("Ali", "ali@gmail.com"),
+        ("Khalid", "khalid@gmail.com"),
+        ("Omar", "omar@gmail.com")
+    ]
 
-#     mycursor.executemany(query, values)
-#     mydb.commit()
+    mycursor.executemany(query, values)
+    mydb.commit()
 
-#     print("Customers inserted successfully!")
+    print("Customers inserted successfully!")
 
-# except mysql.connector.Error as err:
-#     mydb.rollback()
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    mydb.rollback()
+    print("Error:", err)
 
-# print()
+print()
 
 
 # # Task 6: Insert products data
-# try:
-#     query = """
-#     INSERT INTO products (product_name, price, stock)
-#     VALUES (%s, %s, %s)
-#     """
+try:
+    query = """
+    INSERT INTO products (product_name, price, stock)
+    VALUES (%s, %s, %s)
+    """
 
-#     values = [
-#         ("Laptop", 3500.00, 10),
-#         ("Mouse", 100.00, 50),
-#         ("Keyboard", 200.00, 30),
-#         ("Monitor", 800.00, 15),
-#         ("Headphones", 250.00, 25)
-#     ]
+    values = [
+        ("Laptop", 3500.00, 10),
+        ("Mouse", 100.00, 50),
+        ("Keyboard", 200.00, 30),
+        ("Monitor", 800.00, 15),
+        ("Headphones", 250.00, 25)
+    ]
 
-#     mycursor.executemany(query, values)
-#     mydb.commit()
+    mycursor.executemany(query, values)
+    mydb.commit()
 
-#     print("Products inserted successfully!")
+    print("Products inserted successfully!")
 
-# except mysql.connector.Error as err:
-#     mydb.rollback()
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    mydb.rollback()
+    print("Error:", err)
 
-# print()
+print()
 
 # # Task 7: Insert purchase records
-# try:
-#     query = """
-#     INSERT INTO customer_products (customer_id, product_id, quantity)
-#     VALUES (%s, %s, %s)
-#     """
+try:
+    query = """
+    INSERT INTO customer_products (customer_id, product_id, quantity)
+    VALUES (%s, %s, %s)
+    """
 
-#     values = [
-#         (1, 1, 2),
-#         (1, 2, 1),
-#         (2, 2, 3),
-#         (2, 3, 1),
-#         (3, 3, 2),
-#         (3, 4, 1),
-#         (4, 4, 2),
-#         (4, 5, 1),
-#         (5, 5, 3),
-#         (5, 1, 1)
-#     ]
+    values = [
+        (1, 1, 2),
+        (1, 2, 1),
+        (2, 2, 3),
+        (2, 3, 1),
+        (3, 3, 2),
+        (3, 4, 1),
+        (4, 4, 2),
+        (4, 5, 1),
+        (5, 5, 3),
+        (5, 1, 1)
+    ]
 
-#     mycursor.executemany(query, values)
-#     mydb.commit()
+    mycursor.executemany(query, values)
+    mydb.commit()
 
-#     print("Purchase records inserted successfully!")
+    print("Purchase records inserted successfully!")
 
-# except mysql.connector.Error as err:
-#     mydb.rollback()
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    mydb.rollback()
+    print("Error:", err)
 
 print()
 
@@ -206,58 +206,58 @@ except mysql.connector.Error as err:
 
 print()
 
-# Task 10: Update purchase quantity
-# try:
-#     query = """
-#     UPDATE customer_products
-#     SET quantity = %s
-#     WHERE customer_id = %s AND product_id = %s
-#     """
+#Task 10: Update purchase quantity
+try:
+    query = """
+    UPDATE customer_products
+    SET quantity = %s
+    WHERE customer_id = %s AND product_id = %s
+    """
 
-#     mycursor.execute(query, (5, 1, 1))
-#     mydb.commit()
+    mycursor.execute(query, (5, 1, 1))
+    mydb.commit()
 
-#     print("Purchase quantity updated successfully!")
+    print("Purchase quantity updated successfully!")
 
-# except mysql.connector.Error as err:
-#     mydb.rollback()
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    mydb.rollback()
+    print("Error:", err)
 
-# print()
+print()
 
-# # Task 11: Delete purchase record
-# try:
-#     query = """
-#     DELETE FROM customer_products
-#     WHERE customer_id = %s AND product_id = %s
-#     """
+# Task 11: Delete purchase record
+try:
+    query = """
+    DELETE FROM customer_products
+    WHERE customer_id = %s AND product_id = %s
+    """
 
-#     mycursor.execute(query, (1, 2))
-#     mydb.commit()
+    mycursor.execute(query, (1, 2))
+    mydb.commit()
 
-#     print("Purchase record deleted successfully!")
+    print("Purchase record deleted successfully!")
 
-# except mysql.connector.Error as err:
-#     mydb.rollback()
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    mydb.rollback()
+    print("Error:", err)
 
-# print()
+print()
 
 
 
-# Task 12: Create UNIQUE index on email
-# try:
-#     mycursor.execute("""
-#     CREATE UNIQUE INDEX idx_email
-#     ON customers(email)
-#     """)
+#Task 12: Create UNIQUE index on email
+try:
+    mycursor.execute("""
+    CREATE UNIQUE INDEX idx_email
+    ON customers(email)
+    """)
 
-#     print("Unique index created successfully!")
+    print("Unique index created successfully!")
 
-# except mysql.connector.Error as err:
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    print("Error:", err)
 
-# print()
+print()
 
 
 #  Task 12.1: Handle duplicate email
@@ -279,37 +279,37 @@ except mysql.connector.Error as err:
 print()
 
 # Task 13: Create normal index on product_name
-# try:
-#     mycursor.execute("""
-#     CREATE INDEX idx_product_name
-#     ON products(product_name)
-#     """)
+try:
+    mycursor.execute("""
+    CREATE INDEX idx_product_name
+    ON products(product_name)
+    """)
 
-#     print("Product name index created successfully!")
+    print("Product name index created successfully!")
 
-# except mysql.connector.Error as err:
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    print("Error:", err)
 
-# print()
+print()
 
 
 # Task 14: Create stored procedure
-# try:
-#     mycursor.execute("""
-#     CREATE PROCEDURE GetProductsByPrice(IN min_price DECIMAL(10,2))
-#     BEGIN
-#         SELECT *
-#         FROM products
-#         WHERE price >= min_price;
-#     END
-#     """)
+try:
+    mycursor.execute("""
+    CREATE PROCEDURE GetProductsByPrice(IN min_price DECIMAL(10,2))
+    BEGIN
+        SELECT *
+        FROM products
+        WHERE price >= min_price;
+    END
+    """)
 
-#     print("Stored procedure created successfully!")
+    print("Stored procedure created successfully!")
 
-# except mysql.connector.Error as err:
-#     print("Error:", err)
+except mysql.connector.Error as err:
+    print("Error:", err)
 
-# print()
+print()
 
 # Task 15: Execute stored procedure
 try:
