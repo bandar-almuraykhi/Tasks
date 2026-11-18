@@ -1,0 +1,84 @@
+/* Main Heading Color, Alignment, Size and Weight */
+h1 {
+    color: red;
+     text-align: center;
+      font-size: 36px;
+       font-weight: 700;
+}
+
+/* Heading Sizes and Weights */
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* First Paragraph Color Using ID and Pseudo-class Selectors */
+#about p:first-of-type {
+    color: blue;
+}
+
+/* Element Selector for Paragraph Size and Weight */
+p {
+    font-size: 18px;
+     font-weight: 500;
+}
+
+/* Class Selector for Highlighted Text */
+.highlight {
+    color: green;
+}
+
+/* ID Selector for Introduction Paragraph */
+#intro {
+    color: purple;
+}
+
+/* Header Background Using HEX Color */
+header {
+    background-color: #ff5733;
+}
+
+/* Navigation Background Using RGB Color */
+nav {
+    background-color: rgb(200, 220, 255);
+}
+
+/* About Section Background Using RGBA Transparency */
+#about {
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+/* Skills Section Background Using HSL Color */
+#skills {
+    background-color: hsl(120, 60%, 80%);
+}
+
+/* Google Fonts - Roboto Font Family */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Bold Text Using Font Weight Instead of Strong */
+.bold-text {
+    font-weight: bold;
+}
