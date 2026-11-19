@@ -1,0 +1,98 @@
+/* Include padding and border in element dimensions */
+* {
+    box-sizing: border-box;
+}
+
+/* Without border-box: 314px. With border-box: 250px. */
+
+/* Cards Styling */
+.card {
+    width: 250px;
+    height: 150px;
+
+    /* Padding with one value */
+    /* padding: 20px; */
+
+    /* Padding with two values */
+    /* padding: 10px 20px; */
+
+    /* Padding with four values */
+    padding: 10px 20px 30px 40px;
+
+    border: 2px solid #333;
+    margin: 20px;
+
+    /* Margin for the top only */
+    /* margin-top: 20px; */
+
+    /* Rounded Card Corners */
+    border-radius: 10px;
+
+    /* Display Cards Side by Side */
+    display: inline-block;
+}
+
+
+/* Circular Avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+}
+
+/* Display Example */
+.display-example {
+
+    /* Display Block */
+    display: block;
+
+    /* Display None */
+    /* display: none; */
+
+    background-color: lightgreen;
+    width: 200px;
+    height: 50px;
+}
+
+/* Relative Position */
+.card:first-of-type {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+/* Badge Position */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+/* Fixed Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+/* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
+    z-index: 10;
+}
+
+
+/* Extra Content for Scrolling */
+#extra-content {
+    min-height: 800px;
+    padding: 20px;
+}
