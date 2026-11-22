@@ -1,0 +1,70 @@
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Grid Card Styling */
+.grid-card {
+    height: 100px;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Special Grid Card */
+.special-card {
+    grid-column: span 2;
+}
+
+
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+
+    /* Grid Layout */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Special Grid Card */
+    .special-card {
+        grid-column: span 1;
+    }
+
+    /* Navigation Layout */
+    nav {
+        flex-direction: column;
+    }
+
+}
