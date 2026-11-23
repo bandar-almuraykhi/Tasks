@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee House</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Coffee House</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#products">Products</a>
+            <a href="#join">Join Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home">
+            <h2>Welcome to Coffee House</h2>
+
+            <p>
+                Enjoy our <strong>fresh coffee</strong> and
+                <em>relaxing atmosphere</em> at
+                <span class="highlight">Coffee House</span>.
+            </p>
+
+            <a href="#join" class="button">Join Us</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Coffee House</h2>
+
+            <p>
+                Coffee House is a cozy place where you can enjoy
+                fresh coffee and spend time with friends and family.
+            </p>
+
+            <img src="images/cafe.jpg" alt="Coffee House interior with tables and chairs" width="400" height="250">
+
+            <h3>Why Choose Us?</h3>
+
+            <ul>
+                <li>Fresh Coffee</li>
+                <li>Comfortable Atmosphere</li>
+                <li>
+                    Our Services
+                    <ul>
+                        <li>Free Wi-Fi</li>
+                        <li>Friendly Staff</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Our Menu</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Drink</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Hot Drinks</td>
+                        <td>Espresso</td>
+                        <td>12 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>Latte</td>
+                        <td>18 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cappuccino</td>
+                        <td>18 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3">Cold Drinks</td>
+                        <td>Iced Coffee</td>
+                        <td>20 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>Iced Latte</td>
+                        <td>22 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td>Orange Juice</td>
+                        <td>15 SAR</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">Prices include VAT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Our Products</h2>
+
+            <!-- Products Grid -->
+            <div class="grid-container">
+
+                <!-- Espresso Card -->
+                <article class="card">
+                    <img src="images/espresso.jpg" alt="Espresso Coffee" width="200" height="150">
+                    <h3>Espresso</h3>
+                    <p>Strong and rich coffee.</p>
+                    <p>12 SAR</p>
+                </article>
+
+                <!-- Latte Card -->
+                <article class="card">
+                    <img src="images/latte.jpg" alt="Latte Coffee" width="200" height="150">
+                    <h3>Latte</h3>
+                    <p>Smooth coffee with milk.</p>
+                    <p>18 SAR</p>
+                </article>
+
+                <!-- Cappuccino Card -->
+                <article class="card">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino Coffee" width="200" height="150">
+                    <h3>Cappuccino</h3>
+                    <p>Coffee with steamed milk foam.</p>
+                    <p>18 SAR</p>
+                </article>
+
+                <!-- Iced Coffee Card -->
+                <article class="card">
+                    <span class="badge">New</span>
+                    <img src="images/iced-coffee.jpg" alt="Iced Coffee" width="200" height="150">
+                    <h3>Iced Coffee</h3>
+                    <p>Refreshing cold coffee.</p>
+                    <p>20 SAR</p>
+                </article>
+
+                <!-- Iced Latte Card -->
+                <article class="card">
+                    <img src="images/iced-latte.jpg" alt="Iced Latte" width="200" height="150">
+                    <h3>Iced Latte</h3>
+                    <p>Cold coffee with milk.</p>
+                    <p>22 SAR</p>
+                </article>
+
+                <!-- Orange Juice Card -->
+                <article class="card special-card">
+                    <img src="images/orange-juice.jpg" alt="Orange Juice" width="200" height="150">
+                    <h3>Orange Juice</h3>
+                    <p>Freshly squeezed orange juice.</p>
+                    <p>15 SAR</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Cafe Video -->
+        <video controls width="400">
+            <source src="images/cafe.mp4" type="video/mp4">
+
+        </video>
+
+        <!-- Join Us Section -->
+        <section id="join">
+            <h2>Join Our Loyalty Club</h2>
+
+            <!-- Loyalty Club Form -->
+            <form>
+
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <br><br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <br><br>
+
+                <!-- Favorite Size -->
+                <p>Favorite Size:</p>
+
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+
+                <br><br>
+
+                <!-- Favorite Drinks -->
+                <p>Favorite Drinks:</p>
+
+                <input type="checkbox" id="coffee" name="drinks" value="coffee">
+                <label for="coffee">Coffee</label>
+
+                <input type="checkbox" id="tea" name="drinks" value="tea">
+                <label for="tea">Tea</label>
+
+                <input type="checkbox" id="juice" name="drinks" value="juice">
+                <label for="juice">Juice</label>
+
+                <br><br>
+
+                <!-- Branch Selection -->
+                <label for="branch">Choose a Branch:</label>
+
+                <select id="branch" name="branch">
+                    <option value="riyadh">Riyadh</option>
+                    <option value="jeddah">Jeddah</option>
+                    <option value="dammam">Dammam</option>
+                </select>
+
+                <br><br>
+
+                <!-- Notes -->
+                <label for="notes">Notes:</label>
+                <br>
+                <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Enter your notes"></textarea>
+
+                <br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Join Now</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bandar Almuraykhi</p>
+
+        <a href="https://www.google.com/maps" target="_blank">
+            Google Maps
+        </a>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top">Back to Top</a>
+
+</body>
+
+</html>
