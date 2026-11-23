@@ -1,0 +1,253 @@
+/* Box Sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #6f4e37;
+    padding: 20px;
+}
+
+/* Header Heading */
+header h1 {
+    color: white;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgb(245, 235, 220);
+}
+
+/* Hero Heading */
+#home h2 {
+    font-size: 36px;
+}
+
+/* Hero Paragraph */
+#home p {
+    font-size: 18px;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: hsl(25, 60%, 35%);
+}
+
+/* Join Button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6f4e37;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+/* About Heading */
+#about h2 {
+    font-size: 30px;
+}
+
+/* About Paragraph */
+#about p {
+    font-size: 18px;
+}
+
+/* About Image */
+#about img {
+    border-radius: 10px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 40px 20px;
+}
+
+/* Menu Heading */
+#menu h2 {
+    font-size: 30px;
+}
+
+/* Menu Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Cells */
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Table Header */
+th {
+    background-color: #6f4e37;
+    color: white;
+}
+
+/* Products Section */
+#products {
+    padding: 40px 20px;
+}
+
+/* Products Heading */
+#products h2 {
+    font-size: 30px;
+}
+
+/* Products Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+/* Product Cards */
+.card {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Product Images */
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Special Card */
+.special-card {
+    grid-column: span 2;
+}
+
+/* New Badge */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Join Us Section */
+#join {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Join Us Heading */
+#join h2 {
+    font-size: 30px;
+}
+
+/* Form Styling */
+form {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+/* Form Button */
+button {
+    padding: 10px 20px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Footer Link */
+footer a {
+    color: white;
+}
+
+/* Hero Paragraph Background */
+#home p {
+    background-color: rgba(111, 78, 55, 0.2);
+    padding: 15px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6f4e37;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+
+    /* Products Grid */
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 480px) {
+
+    /* Products Grid */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Special Card */
+    .special-card {
+        grid-column: span 1;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+    }
+}
